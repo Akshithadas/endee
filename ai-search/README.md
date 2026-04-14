@@ -54,7 +54,8 @@ ai-chatbot/
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/Akshithadas/endee.git
+git clone <your-repo-link>
+cd ai-search
 ```
 
 ### 2. Create Virtual Environment
