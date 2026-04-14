@@ -1,30 +1,63 @@
-# AI Search Module
 
-## Overview
-The **ai-search** module is responsible for handling semantic search, query processing, and retrieval logic within the Endee system.
+<p align="center">
+  <img src="https://img.shields.io/badge/Endee-Vector_DB-blue?style=flat-square" />
+  <img src="https://img.shields.io/badge/AI-Search-green?style=flat-square" />
+  <img src="https://img.shields.io/badge/License-Apache_2.0-orange?style=flat-square" />
+  <img src="https://img.shields.io/badge/Status-Active-brightgreen?style=flat-square" />
+</p>
 
-It acts as a core component in the Endee vector database architecture, enabling efficient AI-powered search operations.
-
----
-
-## Responsibilities
-
-- Process user queries
-- Perform semantic/vector-based search
-- Interface with core Endee engine
-- Return ranked and filtered results
+<p align="center">
+  <h1>Endee</h1>
+  <p>High-performance open-source vector database for AI search, RAG, semantic search, and hybrid retrieval</p>
+</p>
 
 ---
 
-## Architecture Flow
+## Why Endee
 
-1. User Query Input
-2. Query Preprocessing
-3. Embedding Generation
-4. Vector Similarity Search
-5. Result Ranking
-6. Response Output
+- Built for AI search and retrieval systems  
+- Supports vector + hybrid search  
+- Optimized for performance workloads  
 
 ---
 
-## Folder Structure
+## Features
+
+- High-performance vector search engine  
+- Hybrid search (dense + sparse support)  
+- Payload filtering for metadata-aware retrieval  
+- Scalable architecture for AI workloads  
+- Optimized for low-latency search  
+
+---
+
+## Modules
+
+### ai-search
+Handles semantic search, query processing, and retrieval logic.
+
+- Documentation: ./ai-search/README.md
+
+---
+
+## Architecture
+
+Endee follows a modular vector search pipeline:
+
+---
+
+## API (Conceptual)
+### Search Request
+```json
+{
+  "query": "machine learning",
+  "top_k": 5
+}
+[
+  {
+    "id": "doc1",
+    "score": 0.92,
+    "text": "Introduction to machine learning..."
+  }
+]
+---
